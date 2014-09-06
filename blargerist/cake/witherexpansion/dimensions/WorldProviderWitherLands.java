@@ -6,6 +6,8 @@ import net.minecraft.world.biome.WorldChunkManagerHell;
 import net.minecraft.world.chunk.IChunkProvider;
 
 public class WorldProviderWitherLands extends WorldProvider{
+    
+    public static int dimensionId = DimensionInfo.WITHER_LANDS_ID;
 
     @Override
     public String getDimensionName() {

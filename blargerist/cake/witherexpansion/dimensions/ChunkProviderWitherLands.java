@@ -176,7 +176,6 @@ public class ChunkProviderWitherLands implements IChunkProvider {
             for (int l = 0; l < 16; ++l) {
                 BiomeGenBase biomegenbase = biomesForGeneration[l + k * 16];
                 biomegenbase.genTerrainBlocks(this.worldObj, this.seed, blockArray, metaArray, chunkX * 16 + k, chunkZ * 16 + l, this.stoneNoise[l + k * 16]);
-                WitherExpansion.Log.info("Replacing Biome Blocks at:" + (chunkX * 16 + k) + " " + (chunkZ * 16 + l));
             }
         }
     }

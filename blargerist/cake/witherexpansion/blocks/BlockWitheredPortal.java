@@ -81,7 +81,7 @@ public class BlockWitheredPortal extends BlockPortal
         return tryToCreatePortal(world, x, y, z);
     }
     
-    public static boolean tryToCreatePortal(World world, int x, int y, int z)
+    public boolean tryToCreatePortal(World world, int x, int y, int z)
     {
         BlockWitheredPortal.Size size = new BlockWitheredPortal.Size(world, x, y, z, 1);
         BlockWitheredPortal.Size size1 = new BlockWitheredPortal.Size(world, x, y, z, 2);
@@ -247,7 +247,7 @@ public class BlockWitheredPortal extends BlockPortal
         
         protected boolean isBlockValid(Block block)
         {
-            return block.getMaterial() == Material.air || block == Blocks.fire || block == ModBlocks.witheredPortal;
+            return block.getMaterial() == Material.air || block == ModBlocks.witheredFire || block == ModBlocks.witheredPortal;
         }
         
         public boolean isSizeValid()

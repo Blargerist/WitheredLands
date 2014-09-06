@@ -12,7 +12,8 @@ public class ModBlocks {
 	public static Block witheredPortal;
 	public static Block witheredFire;
 	
-    public static final BlockWitheredPortal portal = (BlockWitheredPortal)Block.getBlockFromName(BlockInfo.WITHERED_PORTAL_UNLOCALIZED_NAME);
+    //public static final BlockWitheredPortal portal = (BlockWitheredPortal)Block.getBlockFromName(ModInfo.MODID + ":" + BlockInfo.WITHERED_PORTAL_UNLOCALIZED_NAME);
+	public static final BlockWitheredPortal WITHERED_PORTAL = new BlockWitheredPortal();
 	
 	public static void init()
 	{
